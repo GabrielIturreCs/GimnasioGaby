@@ -565,3 +565,13 @@ h6,
 .table th, .table td {
     text-align: center;
 }
+.dropdown-menu {
+    width: auto;
+    max-width: 300px; /* Ajusta según sea necesario */
+    overflow: visible;
+  }
+  .dropdown-item {
+    color: rgb(255, 115, 0); /* Ajusta el color para que sea visible */
+
+  }
+  
