@@ -1,0 +1,567 @@
+/********** Template CSS **********/
+:root {
+    --primary: #FB5B21;
+    --secondary: #BDBDBF;
+    --light: #F4F5F8;
+    --dark: #222429;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    margin-right: 30px;
+    padding: 40px 0;
+    color: var(--light);
+    font-size: 17px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+/* Mega menú */
+.mega-dropdown .dropdown-menu {
+    width: 100%; /* Hacemos que ocupe todo el ancho */
+    max-width: 1200px; /* Establecemos un ancho máximo para evitar que se extienda demasiado */
+    left: 50%;
+    transform: translateX(-50%); /* Para centrar el menú */
+    background-color: #1c1c1c; /* Fondo oscuro */
+    padding: 20px 40px; /* Aumentamos el padding para que haya más espacio */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Un pequeño margen superior para que no quede pegado al botón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+.mega-dropdown .dropdown-item {
+    padding: 10px 15px; /* Aumentamos el padding de los ítems */
+    color: var(--light); /* Color de texto */
+    font-size: 16px; /* Tamaño de texto */
+    text-transform: none; /* Deshabilitamos el texto en mayúsculas */
+}
+
+.mega-dropdown .dropdown-item:hover {
+    color: var(--primary); /* Cambio de color al pasar el ratón */
+    background-color: transparent; /* Fondo transparente en hover */
+}
+
+.mega-dropdown h6 {
+    color: var(--primary); /* Color del título */
+    font-weight: bold;
+    margin-bottom: 15px; /* Más espacio entre el título y los elementos */
+}
+
+/* Espaciado entre las columnas */
+.mega-dropdown .row > div {
+    padding-left: 20px;
+    padding-right: 20px; /* Añadimos más espacio entre las columnas */
+}
+
+/* Aseguramos que el mega menú se vea bien en pantallas pequeñas */
+@media (max-width: 768px) {
+    .mega-dropdown .dropdown-menu {
+        width: 100%; /* Aseguramos que ocupe todo el ancho en pantallas pequeñas */
+        padding: 15px; /* Ajustamos el padding para pantallas pequeñas */
+    }
+    .mega-dropdown .row > div {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 36, 41, .8);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-hero {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/jbhbvhyv.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.programe::after {
+    position :absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 135px;
+    left: 0;
+    background: var(--dark);
+    z-index: -1;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.2);
+}
+
+.team-item .team-overlay {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 36, 41, .9);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+@media (min-width: 991.98px) {
+    .credit {
+        background: var(--primary);
+    }
+}
+
+#background-video {
+    height: 100vh; /* o un valor menor si querés recortar más */
+    object-fit: cover; /* Esto asegura que el video llene el espacio sin deformarse */
+    object-position: center top; /* Esto enfoca la parte superior del video */
+}
+    /* Flip Card */
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 400px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .flip-card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .flip-card-back {
+        background: #f8f9fa;
+        color: black;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Estrellas */
+    .star-rating {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+        font-size: 1.5rem;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .star-rating input {
+        display: none;
+    }
+
+    .star-rating label {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: gold;
+    }
+    .highlight-col {
+        background-color: #f8f9fa !important;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .highlight {
+        background-color: rgba(199, 84, 8, 0.2) !important;
+      }
+      /* Tabla oscura con bordes rojos suaves */
+.table-dark th,
+.table-dark td {
+    vertical-align: middle;
+    border: 1px solid rgba(204, 91, 16, 0.2);
+}
+
+/* Resaltar fila y columna en hover */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: rgba(197, 115, 21, 0.2); /* rojo translúcido */
+}
+
+/* Tooltips más visibles */
+.tooltip-inner {
+    background-color: #da8421; /* rojo Bootstrap */
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 0.5rem;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #e29623;
+}
+
+/* Switch toggle estilo Bootstrap (si querés personalizar más) */
+.form-check-input:checked {
+    background-color: #dc8635;
+    border-color: #d35f1d;
+}
+
+/* Títulos y botones */
+.table thead th {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* Botón "Unirse Ahora" */
+.btn-unirse {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #d16812;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-unirse:hover {
+    background-color: #d46321;
+    color: #fff;
+}
+
+/* Blog Grid estilo revista */
+.blog-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #1e1e1e;
+    transition: transform 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-item .bg-dark {
+    background-color: #111;
+    border-top: 2px solid #444;
+}
+
+/* Comentarios con avatar (para más adelante) */
+.comment {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+
+.comment::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    background: url('img/avatar.png') no-repeat center center / cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Filtros de tags */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-buttons button.active {
+    background-color: #ff4081;
+    color: white;
+}
+/* Estilos para los comentarios */
+.comments-container .comment {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+}
+
+.comment-content {
+    max-width: 80%;
+}
+
+.comment-content .reply {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.comment-content .reply:hover {
+    text-decoration: underline;
+}
+
+/* Scroll Reveal con AOS */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Galería tipo Masonry con CSS Grid */
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Se adapta a la pantalla */
+    gap: 20px;
+}
+
+/* Efecto de zoom al pasar el cursor sobre las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Agrega sombra para mayor énfasis */
+}
+
+/* Filtros por categoría */
+.card-wrapper {
+    display: block;
+}
+
+/* Esconde las tarjetas que no pertenecen a las categorías seleccionadas */
+.power-lifting,
+.body-building,
+.cardio {
+    display: block;
+}
+
+#filter1:checked ~ .tab-class .card-wrapper.power-lifting {
+    display: block;
+}
+
+#filter2:checked ~ .tab-class .card-wrapper.body-building {
+    display: block;
+}
+
+#filter3:checked ~ .tab-class .card-wrapper.cardio {
+    display: block;
+}
+
+/* Ajustes de la tabla */
+.table-responsive {
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+.table th, .table td {
+    text-align: center;
+}
